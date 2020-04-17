@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Pokemon GO Poznań</title>
+	
+	<meta name="description" content="Serwis o Pokemon GO" />
+	<meta name="keywords" content="Pokemon, GO, Pokemon GO, Poradnik, Generation, Generacje, Tutorial, Poznań, Poznan, Misje, Research" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+		
+			<div class="logo" >
+				<img class="pokeball" src="image/pokeball.png" style="float: left;"/>
+				<span style="color: #c34f4f">Pokemon</span>GO<span style="color: #c34f4f">Poznań</span>
+				<img class="pokeball" src="image/pokeball.png" style="float: right;"/>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a href="#">Generacje</a>
+					<ul>
+						<li><a href="generation1.html">Generacja 1</a></li>
+						<li><a href="generation2.html">Generacja 2</a></li>
+						<li><a href="generation3.html">Generacja 3</a></li>
+						<li><a href="generation4.html">Generacja 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Quests</a>
+					<ul>
+						<li><a href="researchrewards.html">Research rewards</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+					</ul>
+				</li>
+				<li><a href="#">W budowie</a>
+					<ul>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+					</ul>
+				</li>
+				<li><a href="#">W budowie</a>
+					<ul>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+						<li><a href="#">W budowie</a></li>
+					</ul>
+				</li>
+				<li><a href="oautorze.html">O autorach</a></li>
+			</ol>
+		
+		</div>
+		
+		<div class="content">
+			<h1> AUTOR STRONY MARCIN KU... ;) </h1>
+		</div>
+	<!--	
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb">
+					<i class="icon-facebook"></i>
+				</div>
+				<div class="yt">
+					<i class="icon-youtube"></i>
+				</div>
+				<div class="tw">
+					<i class="icon-twitter"></i>
+				</div>
+				<div class="gplus">
+					<i class="icon-gplus"></i>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	-->	
+		<div class="footer">PokemonGOPoznań &copy; 2018 Dziękuję za odwiedziny PokemonGOPoznań! Złap je wszystkie ;-) </div>
+	</div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+</html>
